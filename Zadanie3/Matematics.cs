@@ -22,7 +22,10 @@ namespace Zadanie3
         }
         public double Divide(double x, double y)
         {
-            return x / y;
+           // if (y != 0)
+                return x / y;
+           // else
+                //return Double.IsInfinity;
         }
     }
 }
