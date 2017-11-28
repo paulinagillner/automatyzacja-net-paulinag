@@ -1,0 +1,60 @@
+Generating clink initial settings in "C:\Users\Administrator\Downloads\cmder\config\settings"
+Additional *.lua files in "C:\Users\Administrator\Downloads\cmder\config" are loaded on startup.
+Creating initial user-aliases store in "C:\Users\Administrator\Downloads\cmder\config\user-aliases.cmd"...
+Liczba skopiowanych plików:         1.
+Creating user startup file: "C:\Users\Administrator\Downloads\cmder\config\user-profile.cmd"
+
+C:\Users\Administrator
+? cd..
+
+C:\Users
+? cd..
+
+C:\
+? cd szkolenie
+
+C:\Szkolenie
+? git clone https://github.com/paulinagillner/automatyzacja-net-paulinag.git zadanie3
+Cloning into 'zadanie3'...
+remote: Counting objects: 44, done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 44 (delta 15), reused 37 (delta 11), pack-reused 0
+Unpacking objects: 100% (44/44), done.
+
+C:\Szkolenie
+? cd zadanie3
+
+C:\Szkolenie\zadanie3 (master -> origin)
+? git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Szkolenie\zadanie3 (master -> origin)
+? cd ..
+
+C:\Szkolenie
+? cd zadanie3
+
+C:\Szkolenie\zadanie3 (master -> origin)
+? git log
+commit ed26c31e38795cc2d8927c90d322ea702565c750 (HEAD -> master, origin/master, origin/HEAD)
+Author: paulinagillner <33896134+paulinagillner@users.noreply.github.com>
+Date:   Thu Nov 23 15:28:49 2017 +0100
+
+    Initial commit
+
+C:\Szkolenie\zadanie3 (master -> origin)
+? git log --all --decorate --oneline --graph  
+-------------------------
+//³adnie wygl¹da z drzewkiem
+--------------------------
+* 1cac159 (origin/zadanie2) Dodanie projekt<C3><B3>w z zadania drugiego
+| * 749ac5d (origin/zadanie1) dodanie plik<C3><B3>w z zadania 1
+|/
+* ed26c31 (HEAD -> master, origin/master, origin/HEAD) Initial commit
+
+C:\Szkolenie\zadanie3 (master -> origin)
+?
+-----------------------------------------------------
