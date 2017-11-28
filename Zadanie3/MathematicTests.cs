@@ -9,11 +9,19 @@ namespace Zadanie3
 {
     public class MathematicTests//musi być public zeby mozna bylo sie do tego dostac<-nazwa klasy przypadków testowych
      {
-        [Theory]
-        [InlineData(10, 20, 30)]
-        [InlineData(20, 30, 40)]
-        [InlineData(1, 2, 3)]
-        [InlineData(0, 0, 0)]
+        [Theory]//odnosi się tylko do tego co jest do momentu wystapienia pierwszej metody
+        [InlineData(10, 20, 30)]                // .
+        [InlineData(20, 30, 50)]                // . 
+        [InlineData(1, 2, 3)]                   // .
+        [InlineData(-0d, 0d, -0d)]              // .
+                                                // .
+        [                                       // .
+            InlineData(0, 0, 0),                // .    //inny sposob na zapisanie
+            InlineData(1, 3, 4),                // .
+            InlineData(2, 3, 5)                 // .
+        ]                                       // .
+                                                // .
+        [InlineData(0, 0, 0)]                   // v
         public void Method_add_returns_suma_of_given_values(double x, double y, double expected)
         {
             //arrange
