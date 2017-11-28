@@ -9,6 +9,22 @@ namespace Zadanie3
 {
     public class MathematicTests//musi być public zeby mozna bylo sie do tego dostac<-nazwa klasy przypadków testowych
      {
+        [Theory]
+        [InlineData(10, 20, 30)]
+        [InlineData(20, 30, 40)]
+        [InlineData(1, 2, 3)]
+        [InlineData(0, 0, 0)]
+        public void Method_add_returns_suma_of_given_values(double x, double y, double expected)
+        {
+            //arrange
+            var math = new Matematics();
+            //act
+            var result = math.Add(x, y);
+            //assert 
+            Assert.Equal(expected, result);
+        }
+
+
         [Fact]//po adnotacji Fact jest publiczna klasa, ktora nic nie zwraca
         public void Add_returns_suma_of_given_values()//nie moze nic zwracac, nazwa ma wskazywac co to robi
                    //^-to jest nazwa testu to nam wywali przy podsumowaniu jesli nazwy sa zbyt dlugie i sie zawijaja, to warto sobie stworzyc wiecej kals testowych np dodawanie
@@ -45,6 +61,7 @@ namespace Zadanie3
             //assert 
             Assert.Equal(25, result);
         }
+
         [Fact]
         public void Add_returns_roznica2_of_given_values()
         {
@@ -55,6 +72,7 @@ namespace Zadanie3
             //assert 
             Assert.Equal(15, result);
         }
+
         [Fact]
         public void Add_returns_iloczyn_of_given_values()
         {
@@ -65,6 +83,7 @@ namespace Zadanie3
             //assert 
             Assert.Equal(12, result);
         }
+
         [Fact]
         public void Add_returns_iloczyn2_of_given_values()
         {
@@ -75,6 +94,7 @@ namespace Zadanie3
             //assert 
             Assert.Equal(16, result);
         }
+
         [Fact]
         public void Add_returns_iloraz01_of_given_values()
         {
@@ -85,15 +105,17 @@ namespace Zadanie3
             //assert 
             Assert.Equal(Double.PositiveInfinity , result);
         }
-        public void Add_returns_iloraz02_of_given_values()
+       /* public void Add_returns_iloraz02_of_given_values()
         {
             //arrange
             Matematics math = new Matematics();
             //act
             var result = math.Divide(10, 0);
             //assert 
-            Assert.Equal(2, result);
-        }
+            //Assert.Throws<DivideByZeroException>(()=>math.Divide()...);
+
+        }*/
+
         [Fact]
         public void Add_returns_iloraz1_of_given_values()
         {
