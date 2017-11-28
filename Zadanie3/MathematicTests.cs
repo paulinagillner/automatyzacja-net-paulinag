@@ -21,7 +21,7 @@ namespace Zadanie3
             InlineData(2, 3, 5)                 // .
         ]                                       // .
                                                 // .
-        [InlineData(0, 0, 0)]                   // v
+        [InlineData(1, 0, 1)]                   // v
         public void Method_add_returns_suma_of_given_values(double x, double y, double expected)
         {
             //arrange
