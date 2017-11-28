@@ -57,4 +57,24 @@ C:\Szkolenie\zadanie3 (master -> origin)
 
 C:\Szkolenie\zadanie3 (master -> origin)
 ?
------------------------------------------------------
+C:\Szkolenie\zadanie3 (master -> origin)
+? git add .
+
+C:\Szkolenie\zadanie3 (master -> origin)
+
+? git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Notatki git.txt
+        new file:   Notatki.txt
+        new file:   Zadanie3.sln
+        new file:   Zadanie3/Class1.cs
+        new file:   Zadanie3/Properties/AssemblyInfo.cs
+        new file:   Zadanie3/Zadanie3.csproj
+
+
+C:\Szkolenie\zadanie3 (master -> origin)
