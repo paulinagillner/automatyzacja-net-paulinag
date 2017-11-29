@@ -13,7 +13,13 @@ namespace PageObjectTest
         public void CanAddCommentToTheBlogNote()
         {
             MainPage.Open();
-            
+            MainPage.OpenFirstNote();
+            NotePage.AddComment(new Comment
+            {
+                Text = "Lorem ipsum",
+                Mail = "test@est.com",
+                User = "białko"
+            });
             //wejdz na strone bloga
             //otworz pierwszą notke
             //dodaj komentarz

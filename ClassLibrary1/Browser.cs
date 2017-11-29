@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.ObjectModel;
 
@@ -9,6 +10,11 @@ namespace PageObjectTest
     {
         private static ChromeDriver _driver; //zmienne mają sie nazywac od litery lub _
 
+        internal static IWebElement FindElementById(string id)
+        {
+            return _driver.FindElement(By.Id(id));
+        }
+
         static Browser()
         {
             _driver = new ChromeDriver();
@@ -16,6 +22,12 @@ namespace PageObjectTest
             _driver.Manage()
                 .Timeouts()
                 .ImplicitWait = TimeSpan.FromMilliseconds(500);
+        }
+
+        internal static void WaitForInvisible(By by)
+        {
+            new WebDriverWait(_driver, TimeSpan.FromSeconds(10))
+            .Until(ExpectedConditions.InvisibilityOfElementLocated(by));
         }
 
         internal static ReadOnlyCollection<IWebElement> FindByXpath(string xpath)
