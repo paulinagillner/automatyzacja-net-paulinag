@@ -75,6 +75,6 @@ Changes to be committed:
         new file:   Zadanie3/Class1.cs
         new file:   Zadanie3/Properties/AssemblyInfo.cs
         new file:   Zadanie3/Zadanie3.csproj
-
+WIEDZA NA PIERWSZYM MIEJSCU
 
 C:\Szkolenie\zadanie3 (master -> origin)

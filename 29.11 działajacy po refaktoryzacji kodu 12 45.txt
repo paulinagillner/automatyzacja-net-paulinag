@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Text;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -19,8 +19,8 @@ namespace SeleniumTests
         private const string Google = "https://www.google.pl/";             // private string baseURL;
         private const string CodeSprintersPageTitle = "Code Sprinters -";
         private const string TextToSearch = "code sprinters";
-        private const string LinkTextToFind1 = "Poznaj nasze podejÅ›cie";
-        private const string LinkTextToFind2 = "AkceptujÄ™";
+        private const string LinkTextToFind1 = "Poznaj nasze podejœcie";
+        private const string LinkTextToFind2 = "Akceptujê";
         private const string Text001 = "WIEDZA NA PIERWSZYM MIEJSCU";
         private const string TagNameToFind = "h2";
         private IWebDriver driver;
@@ -64,7 +64,7 @@ namespace SeleniumTests
 
             WaitUntilElementIsInvisible(LinkTextToFind2, 11);
 
-            ClickOnLinkWithText(linkTextToTargetPage); //driver.FindElement(By.LinkText("Poznaj nasze podejÅ›cie")).Click();
+            ClickOnLinkWithText(linkTextToTargetPage); //driver.FindElement(By.LinkText("Poznaj nasze podejœcie")).Click();
         }
 
 
@@ -119,8 +119,8 @@ namespace SeleniumTests
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
             wait.Until(ExpectedConditions.ElementToBeClickable(by));
         }
-        //na googla codesprinters wyszukuje agile szkolenia i chce znaleÅºÄ‡ element poznaj nasze podejscie 
-        //kliknac i sprawdzic ze jest artykÃ³Å‚ z tekstem "WIEDZA NA PIERWSZYM MIEJSCU
+        //na googla codesprinters wyszukuje agile szkolenia i chce znaleŸæ element poznaj nasze podejscie 
+        //kliknac i sprawdzic ze jest artykó³ z tekstem "WIEDZA NA PIERWSZYM MIEJSCU
 
 
 
