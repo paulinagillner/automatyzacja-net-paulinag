@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie3", "Zadanie3\Zadani
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySelenium", "MySelenium\MySelenium.csproj", "{7DA6EECD-96BD-496C-B74E-BDDAC8CEEA5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D74B1BAE-7F71-49DE-8D86-568EA2C67CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageObjectTest", "ClassLibrary1\PageObjectTest.csproj", "{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{7DA6EECD-96BD-496C-B74E-BDDAC8CEEA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DA6EECD-96BD-496C-B74E-BDDAC8CEEA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DA6EECD-96BD-496C-B74E-BDDAC8CEEA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B0E595B-8025-4F6C-A9CA-A1A28E15EC2A} = {D74B1BAE-7F71-49DE-8D86-568EA2C67CD4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A3A23EA-0148-450F-B284-2369CCB481EF}
