@@ -114,7 +114,7 @@ namespace SeleniumTests
             wait.Until(ExpectedConditions.ElementToBeClickable(by));
         }
 
-        protected void waitForElementPresent(IWebElement by, int seconds)
+       protected void waitForElementPresent(IWebElement by, int seconds)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
             wait.Until(ExpectedConditions.ElementToBeClickable(by));

@@ -1,1 +1,28 @@
 notatki
+
+
+
+hub czy node
+okreslam port np 89
+
+tam gdzie jest chrome driver wstawiamy grid driver
+
+trzeba podac 2 properties ktore mowia gdzie jest ten grid namiary na grida i ze chce wykonywac nap na firefox i chrome
+selenium grid: hub/node: port
+
+VS.
+.
+.
+.
+.......
+	grid
+	......
+	.	.
+	.	.
+	.	.
+    node	node
+
+
+na nodach musza byc binarki webdriverow
+gecodriver?
+
